@@ -20,6 +20,10 @@ if( fs.existsSync('./domain.json') ) {
 
 /* Gulp Test task*/
 gulp.task('test', function() {
+  if (util.env.url) {
+    domain = util.env.url;
+  }
+
   return browserSync.init(null, {
     proxy: domain,
     startPath: "",
@@ -43,5 +47,5 @@ gulp.task('default', ['test']);
 gulp.task('help', function () {
   console.log("\n\nUsage".underline);
   console.log("  gulp [command] --option\n\n"+"Commands:".underline);
-  console.log('gulp test'.yellow+'\t\trun Gulp test enviroment');
+  console.log('gulp test --url URL'.yellow+'\t\trun Gulp test enviroment');
 });
