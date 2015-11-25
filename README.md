@@ -8,4 +8,4 @@ Testsuite for the UX testing team
 2.) run 'npm install'
 <br /><br />
 ## How to run it
-run 'gulp test --url YOURTESTURL'
+run 'gulp --url YOURTESTURL'
