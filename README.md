@@ -1,11 +1,15 @@
 # testsuite
 Testsuite for the UX testing team
-<br /><br />
+
 ## Installation
-1.) Checkout git repo<br />
-&nbsp;&nbsp;&nbsp;=> Open Terminal, run 'git clone git@github.com:AmazeeLabs/testsuite.git'<br />
-&nbsp;&nbsp;&nbsp;=> 'cd testsuite'<br />
-2.) run 'npm install'
-<br /><br />
+In Terminal:
+
+    git clone git@github.com:AmazeeLabs/testsuite.git
+    cd testsuite
+    npm install
+
 ## How to run it
-run 'gulp --url YOURTESTURL'
+
+    gulp --url YOURTESTURL
+
+`YOURTESTURL` is the URL you would like to test against, with http://
